@@ -1,0 +1,37 @@
+
+#{extends 'template.html'/}
+
+	
+    <body style="margin: 0px;padding: 0px; font-style: courier" >
+
+  <div style="width: 100%;height: 100%">
+
+
+#{include 'main.html'/}
+<div class="form-group" style="float: left; width: 100%;height: 77%">
+
+#{include 'panelperfil.html'/}
+        
+
+<div class="bod" id="largeData" style="float: left;width: 60%;">
+#{form @Projetos.novoLocal(),enctype:'multipart/form-data' }
+    
+    <fieldset><p><label for='inp'>Nome</label><input class="form-control" type="text" id="inp" value="${pessoa?.pes_nome}" name="pessoa.pes_nome"/></fieldset>
+     <fieldset><p><label for='inp2'>Email</label><input class="form-control" type="text" id="inp2" value="${pessoa?.pes_email}" name="pessoa.pes_email"/></fieldset>
+      <fieldset><p><label for='inp3'>Nome</label><input class="form-control" type="text" id="inp3" value="${pessoa?.pes_nome}" name="pessoa.pes_nome"/></fieldset>
+       <fieldset><p><label for='inp4'>Nome</label><input class="form-control" type="text" id="inp4" value="${pessoa?.pes_nome}" name="pessoa.pes_nome"/></fieldset>
+	#{/form}  
+		</div>
+
+       
+
+       #{include 'busca.html'/}
+
+     </div>
+
+
+  
+   </div>
+
+</body>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="all" charset="utf-8" />
+
+	<script src="../src/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../src/jquery.infieldlabel.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$(function(){ $("label").inFieldLabels(); });
+	</script>
+
+</head>
+
+<body>
+
+	<form action="index.html" method="get" accept-charset="utf-8">
+		<fieldset>
+
+			<p>
+				<label for="name">Name</label><br />
+				<input type="text" name="name" value="" id="name">
+			</p>
+			<p>
+				<label for="email">Email</label><br />
+				<input type="text" name="email" value="" id="email">
+			</p>
+			<p>
+				<label for="website">Website</label><br />
+				<input type="text" name="website" value="" id="website">
+			</p>
+			<p>
+				<label for="comment">Comment</label><br />
+				<textarea cols="30" rows="10" name="comment" id="comment"></textarea>
+			</p>
+		</fieldset>
+		<p><input type="submit" value="Continue &rarr;"></p>
+	</form>
+
+
+</body>
+</html>

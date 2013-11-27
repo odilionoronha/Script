@@ -1,0 +1,16 @@
+  <span id="right" style="float: right; width: 15%; height: 100%;">
+  <div class="panel panel-default">
+  <div class="panel-body">
+<form action='@{Timeline.busca()}' method='GET'><br><fieldset><p><label for='busca'>Busca</label><input class="form-control" type='text' onfocus='' name="busca" id="busca"  /></fieldset> 
+</form>
+			  #{if amigosSoli}	
+				  <a href="@{Timeline.aceitar(amigosSoli)}" style="text-decoration:none;color:#279590;">${amigosSoli.usu_codigo}<img src="@{userPhoto(amigosSoli.usu_codigo)}" width='50' height='60' style='border:2'  />  Aceitar Amizade</a>
+    #{/if}
+    </div>
+ 
+</div> 
+         </span>
+           <script type="text/javascript" charset="utf-8">
+		$(function(){ $("label").inFieldLabels(); });
+		
+			</script>

@@ -1,0 +1,34 @@
+#{extends 'template.html'/}
+<body>
+#{include 'main.html'/}
+<br>
+<br>
+Total : <input type="number" id="tota" value="10">      
+<button type="button"  id="WS1dec" class="but"> - </button>  
+<input type="number" id="WS1" value="1">        
+<button type="button"  id="WS1inc" class="but"> + </button>  
+<hr/>
+<button type="button"  id="WS2dec" class="but"> - </button>  
+<input type="number" id="WS2" value="1">        
+<button type="button"  id="WS2inc" class="but"> + </button>
+
+
+<script>
+$(function() {
+  $(".but").on("click",function() {
+    var id=this.id;
+    var fldId=id.substring(0,id.length-3);
+    var inc=id.substring(id.length-3)=="inc";
+    var fld = $("#"+fldId);
+    var val = +fld.val();
+    if (inc){
+    var a = 10;
+    $("#tota").val(a--) ;
+    val++;
+    
+    }else val--;
+    fld.val(val);
+  });
+});
+</script>
+</body>
